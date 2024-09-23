@@ -98,7 +98,7 @@ nav ul li {
   .signup-box {
     padding: 50px;
     width: 45%;
-    background-image: url(images/signuppic.avif);
+    background: url(images/signuppic.avif);
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
