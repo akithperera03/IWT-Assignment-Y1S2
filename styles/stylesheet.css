@@ -1,0 +1,184 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif; /* Choose a suitable font */
+}
+
+.container {
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #f0f0f0;
+    padding: 15px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold; 
+   
+}
+#logoimage{
+    width: 75px; 
+    height: 75px;
+}
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user span {
+    margin-right: 10px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #333; /* Placeholder color */
+    color: white;
+    text-align: center;
+    padding: 100px 0; /* Adjust as needed */
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.search input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.search button {
+    padding: 10px 15px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+/* Featured Weddings & Most Reviewed */
+.featured-weddings, .most-reviewed {
+    padding: 50px 0;
+}
+
+.wedding-list, .venue-list {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+}
+
+.wedding, .venue {
+    width: 200px; /* Adjust as needed */
+    height: 150px; /* Adjust as needed */
+    background-color: #eee; /* Placeholder color */
+    margin-right: 20px;
+}
+
+.arrow {
+    font-size: 2em;
+    align-self: center; /* Vertically center the arrow */
+    cursor: pointer;
+}
+
+/* Key Facilities & Customer Reviews */
+.facilities-reviews {
+    padding: 50px 0;
+}
+
+.facilities-reviews .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.key-facilities ul {
+    list-style: none;
+}
+
+.customer-reviews {
+    text-align: center;
+}
+
+.rating {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.rating-bar {
+    width: 200px;
+    height: 20px;
+    background-color: #eee;
+    border-radius: 10px;
+}
+
+.progress {
+    height: 100%;
+    background-color: green; /* Placeholder color */
+    width: 70%; /* Adjust based on the rating */
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social a {
+    color: white;
+    margin-right: 10px; 
+    text-align: center; 
+} 
+.social img {
+    width: 30px; 
+    height: 30px;
+}
+
+.subscribe input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px; 
+} 
+.bottomlinks a{ 
+    
+        color:yellow;
+     }
+.bottomlinks p {
+    text-align: center;
+}
+   
