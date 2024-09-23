@@ -99,6 +99,12 @@ footer .container {
     border: none;
     border-radius: 5px; 
 } 
+.subscribe button {
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
 .bottomlinks a{ 
     
         color:yellow;
