@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    background-image: url(hotel1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the page takes up at least full viewport height */
+}
+
+
+header {
+    background-color: #f0f0f0;
+    padding: 15px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold; 
+   
+}
+#logoimage{
+    width: 75px; 
+    height: 75px;
+}
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user span {
+    margin-right: 10px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 50%;
+}
+
+.contact-box {
+    background: #342e2e;
+    padding: 20px;
+    text-align: center;
+    border-radius: 0px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    border: 2px solid #000000;
+
+}
+
+.contact-box .icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-box h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-box p {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.contact-form {
+    width: 45%;
+    background: transparent;
+    padding: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 0px;
+    border: 2px solid #000000;
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ccc;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contact-form textarea {
+    height: 120px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #000000;
+    color: rgb(243, 235, 235);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.contact-form button:hover {
+    background-color: #342d2d;
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social a {
+    color: white;
+    margin-right: 10px; 
+    text-align: center; 
+} 
+.social img {
+    width: 30px; 
+    height: 30px;
+}
+
+.subscribe input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px; 
+} 
+.bottomlinks a{ 
+    
+        color:yellow;
+     }
+.bottomlinks p {
+    text-align: center;
+}
+   
