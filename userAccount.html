@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aurora Bliss</title>
     <link rel="stylesheet" href="styles/stylesheet.css">
-    <link rel="stylesheet" href="styles/registering.css">
-    
+    <link rel="stylesheet" href="styles/userAcc.css">
 </head>
 <body>
 
@@ -31,29 +30,62 @@
         </div>
     </header>
 
-
-    <div class="form-container">
-        <h2>SIGN UP</h2>
-        <form>
-            <input type="text" name="fullname" placeholder="Full Name">
-            <input type="text" name="username" placeholder="Username" required>
-            <input type="email" name="email" placeholder="Email">
-            <input type="password" name="password" placeholder="Password" required>
-            <input type="password" name="repassword" placeholder="Re-type Password" required>
-            
-            <div class="terms">
-                <h3>Terms and Conditions</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    <div class="container">
+        <div class="user-section">
+            <div>
+                <img src="images/userIcon.png" alt="User Avatar">
+                <p>Hello! <strong>Username</strong></p>
+                <button>Logout</button>
             </div>
-
-            <label>
-                <input type="checkbox" name="terms" required> I accept all Terms and Conditions
-            </label>
-
-            <button type="submit">Signup</button>
-        </form>
-        <p>Already have an account? <a href="#">Login</a></p>
+            <div class="alignbtns">
+                <button>Dashboard</button>
+                <button>Edit your profile</button>
+            </div>
+        </div>
+    
+        <div class="info-section">
+            <h3>Personal Information</h3>
+            <label>Username:</label>
+            <input type="text" value="Username" disabled>
+            <label>Full Name:</label>
+            <input type="text" value="Full Name">
+            <label>Email:</label>
+            <input type="email" value="email@example.com">
+            <label>Country:</label>
+            <input type="text" value="Country">
+            <label>NIC:</label>
+            <input type="text" value="National ID">
+            <label>Telephone:</label>
+            <input type="tel" value="Phone Number">
+            <button>Update</button>
+            
+        </div>
+    
+        <div class="password-section">
+            <h3>Password and Security</h3>
+            <label>Current Password</label>
+            <input type="password">
+            <label>New Password</label>
+            <input type="password">
+            <label>Re-type Password</label>
+            <input type="password">
+            <button>Confirm</button>
+        </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <footer>
         <div class="container">
