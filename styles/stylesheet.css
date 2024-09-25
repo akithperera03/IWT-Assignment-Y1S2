@@ -6,18 +6,21 @@
 }
 
 body {
-    font-family: sans-serif; /* Choose a suitable font */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 .container {
-    max-width: 1200px; /* Adjust as needed */
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
 /* Header Styles */
 header {
-    background-color: #f0f0f0;
+    background-color: #005f99;
     padding: 15px 0;
 }
 
@@ -27,38 +30,56 @@ header .container {
     align-items: center;
 }
 
-.logo {
-    font-weight: bold; 
-   
-}
-#logoimage{
-    width: 75px; 
+.logo img {
+    width: 75px;
     height: 75px;
 }
+
 nav ul {
     list-style: none;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
     margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #ddd;
 }
 
 .user {
     display: flex;
     align-items: center;
+    color: white;
 }
 
 .user span {
     margin-right: 10px;
 }
 
+.user a {
+    text-decoration: none;
+    color: #ddd;
+}
+
+.user a:hover {
+    color: #fff;
+}
+
 /* Hero Section */
 .hero {
-    background-color: #333; /* Placeholder color */
+    background-color: #222;
     color: white;
     text-align: center;
-    padding: 100px 0; /* Adjust as needed */
+    padding: 50px;
 }
 
 .hero h1 {
@@ -66,91 +87,181 @@ nav ul li {
     margin-bottom: 20px;
 }
 
-.search {
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Featured Weddings Section */
+.featured-weddings {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.featured-weddings h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.wedding-list {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    align-items: center;
+    gap: 20px;
+    position: relative;
 }
 
-.search input {
-    padding: 10px;
-    border: none;
-    border-radius: 5px 0 0 5px;
+.wedding {
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
-.search button {
-    padding: 10px 15px;
-    background-color: #f0f0f0;
-    border: none;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
+.wedding img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
-/* Featured Weddings & Most Reviewed */
-.featured-weddings, .most-reviewed {
-    padding: 50px 0;
+.wedding:hover {
+    transform: scale(1.05);
 }
 
-.wedding-list, .venue-list {
-    display: flex;
-    overflow-x: auto; /* Enable horizontal scrolling if needed */
-}
-
-.wedding, .venue {
-    width: 200px; /* Adjust as needed */
-    height: 150px; /* Adjust as needed */
-    background-color: #eee; /* Placeholder color */
-    margin-right: 20px;
+.wedding:hover img {
+    transform: scale(1.1);
 }
 
 .arrow {
     font-size: 2em;
-    align-self: center; /* Vertically center the arrow */
+    color: #333;
     cursor: pointer;
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: color 0.2s;
 }
 
-/* Key Facilities & Customer Reviews */
-.facilities-reviews {
-    padding: 50px 0;
+.arrow:hover {
+    color: #555;
 }
 
-.facilities-reviews .container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.key-facilities ul {
-    list-style: none;
-}
-
-.customer-reviews {
+/* Most Reviewed Venues Section */
+.most-reviewed {
+    padding: 40px 0;
+    background-color: #f0f0f0;
     text-align: center;
 }
 
-.rating {
-    font-size: 2em;
+.most-reviewed h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.venue-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+.venue {
+    width: 220px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.venue img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
     margin-bottom: 10px;
 }
 
-.rating-bar {
-    width: 200px;
-    height: 20px;
-    background-color: #eee;
-    border-radius: 10px;
+.venue h3 {
+    font-size: 1.3em;
+    color: #444;
+    margin: 10px 0;
 }
 
-.progress {
-    height: 100%;
-    background-color: green; /* Placeholder color */
-    width: 70%; /* Adjust based on the rating */
+.venue p {
+    font-size: 1em;
+    color: #777;
+}
+
+.venue:hover {
+    transform: translateY(-10px);
+}
+
+/* Key Facilities Section */
+.key-facilities {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.key-facilities h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.facility-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.facility {
+    width: 200px;
+    overflow: hidden;
     border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.facility img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.facility h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #444;
+}
+
+.facility:hover {
+    transform: scale(1.05);
+}
+
+.facility:hover img {
+    transform: scale(1.1);
 }
 
 /* Footer */
 footer {
     background-color: #333;
     color: white;
-    padding: 30px 0;
+    padding: 10px 0;
 }
 
 footer .container {
@@ -159,34 +270,33 @@ footer .container {
     align-items: center;
 }
 
-.social a {
-    color: white;
-    margin-right: 10px; 
-    text-align: center; 
-} 
-.social img {
-    width: 30px; 
+footer .social a {
+    margin-right: 10px;
+    text-align: center;
+}
+
+footer .social img {
+    width: 30px;
     height: 30px;
 }
 
-.subscribe input {
+footer .subscribe input {
     padding: 10px;
     border: none;
-    border-radius: 5px; 
-} 
+    border-radius: 5px;
+}
 
-
-.subscribe button {
+footer .subscribe button {
     padding: 10px;
     background-color: #fff;
     border: none;
-    cursor: pointer;
+    cursor: pointer;
 }
-.bottomlinks a{ 
-    
-        color:yellow;
-     }
-.bottomlinks p {
+
+footer .bottomlinks a {
+    color: yellow;
+}
+
+footer .bottomlinks p {
     text-align: center;
 }
-   

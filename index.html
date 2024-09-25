@@ -1,5 +1,4 @@
 <!DOCTYPE html> 
-<!-- this is from Sanduni Tharaka branch-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,7 +10,9 @@
 
     <header>
         <div class="container">
-            <div class="logo"> <a href="index.html"><img src="images/logo_1.jpg" id="logoimage"></a></div>
+            <div class="logo"> 
+                <a href="index.html"><img src="images/logo_1.jpg" id="logoimage"></a>
+            </div>
             <nav>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
@@ -34,10 +35,6 @@
             <div class="container">
                 <h1>The Art of Celebrating Love</h1>
                 <p>We Bring Your Wedding Fantasies to Life with Unmatched Elegance</p>
-                <div class="search">
-                    <input type="text" placeholder="Search your favorites here">
-                    <button>Q</button>
-                </div>
             </div>
         </section>
 
@@ -45,11 +42,27 @@
             <div class="container">
                 <h2>Featured Weddings by us...</h2>
                 <div class="wedding-list">
-                    <div class="wedding"></div>
-                    <div class="wedding"></div>
-                    <div class="wedding"></div>
-                    <div class="wedding"></div>
-                    <div class="arrow">&gt;</div> 
+                    <!-- Each 'wedding' div includes an image -->
+                    <div class="wedding">
+                        <a href="images/featuredWeddings/wedding1.jpg">
+                            <img src="images/featuredWeddings/wedding1.jpg" alt="Wedding 1">
+                        </a>
+                    </div>
+                    <div class="wedding">
+                        <a href="images/featuredWeddings/wedding2.jpg">
+                            <img src="images/featuredWeddings/wedding2.jpg" alt="Wedding 2">
+                        </a>
+                    </div>
+                    <div class="wedding">
+                        <a href="images/featuredWeddings/wedding3.jpeg">
+                            <img src="images/featuredWeddings/wedding3.jpeg" alt="Wedding 3">
+                        </a>
+                    </div>
+                    <div class="wedding">
+                        <a href="images/featuredWeddings/wedding4.jpeg">
+                            <img src="images/featuredWeddings/wedding4.jpeg" alt="Wedding 4">
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -58,50 +71,80 @@
             <div class="container">
                 <h2>Most reviewed venues...</h2>
                 <div class="venue-list">
-                    <div class="venue"></div>
-                    <div class="venue"></div>
-                    <div class="venue"></div>
-                    <div class="venue"></div>
-                    <div class="arrow">&gt;</div> 
-                </div>
-            </div>
-        </section>
-
-        <section class="facilities-reviews">
-            <div class="container">
-                <div class="key-facilities">
-                    <h3>Key Facilities</h3>
-                    <ul>
-                        <li><input type="checkbox" checked> View</li>
-                        <li><input type="checkbox" checked> Reception</li>
-                        <li><input type="checkbox" checked> Decorations</li>
-                        <li><input type="checkbox" checked> Catering</li>
-                        <li><input type="checkbox" checked> Bar</li>
-                        <li><input type="checkbox" checked> Rooms</li>
-                        <li><input type="checkbox"> Pool</li>
-                        <li><input type="checkbox"> Entertainment</li>
-                    </ul>
-                </div>
-                <div class="customer-reviews">
-                    <h3>Customer Reviews</h3>
-                    <div class="rating">4.5</div>
-                    <div class="rating-bar">
-                        <div class="progress"></div> 
+                    <div class="venue">
+                        <img src="images/venues/venue1.jpeg" alt="Venue 1">
+                        <h3>Grand Hall</h3>
+                        <p>Rating: ⭐⭐⭐⭐ 4.5</p>
+                    </div>
+                    <div class="venue">
+                        <img src="images/venues/venue2.jpeg" alt="Venue 2">
+                        <h3>Ocean View Resort</h3>
+                        <p>Rating: ⭐⭐⭐⭐⭐ 4.8</p>
+                    </div>
+                    <div class="venue">
+                        <img src="images/venues/venue3.jpeg" alt="Venue 3">
+                        <h3>Garden Plaza</h3>
+                        <p>Rating: ⭐⭐⭐⭐ 4.4</p>
+                    </div>
+                    <div class="venue">
+                        <img src="images/venues/venue4.jpeg" alt="Venue 4">
+                        <h3>Mountain Peak</h3>
+                        <p>Rating: ⭐⭐⭐⭐⭐ 4.9</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Key Facilities Section -->
+        <section class="key-facilities">
+            <div class="container">
+                <h2>Key Facilities</h2>
+                <div class="facility-list">
+                    <div class="facility">
+                        <a href="images/facilities/catering.jpeg">
+                            <img src="images/facilities/catering.jpeg" alt="Catering">
+                        </a>
+                        <h3>Catering</h3>
+                    </div>
+                    <div class="facility">
+                        <a href="images/facilities/bar.jpeg">
+                            <img src="images/facilities/bar.jpeg" alt="Bar">
+                        </a>
+                        <h3>Bar</h3>
+                    </div>
+                    <div class="facility">
+                        <a href="images/facilities/pool.jpeg">
+                            <img src="images/facilities/pool.jpeg" alt="Pool">
+                        </a>
+                        <h3>Pool</h3>
+                    </div>
+                    <div class="facility">
+                        <a href="images/facilities/dj.jpeg">
+                            <img src="images/facilities/dj.jpeg" alt="Entertainment">
+                        </a>
+                        <h3>Entertainment</h3>
+                    </div>
+                    <div class="facility">
+                        <a href="images/facilities/babysitting.jpeg">
+                            <img src="images/facilities/babysitting.jpeg" alt="babysitting">
+                        </a>
+                        <h3>babysitting</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
         <div class="container">
-            <div class="logo"> <a href="index.html"><img src="images/logo_1.jpg" id="logoimage"></a></div> 
+            <div class="logo"> 
+                <a href="index.html"><img src="images/logo_1.jpg" id="logoimage"></a>
+            </div> 
             <div class="social">
                 <a href="https://www.instagram.com"><img src="images/instagram.jpeg" alt="Instagram"></a>
                 <a href="https://www.facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
                 <a href="https://www.x.com"><img src="images/x.png" alt="X"></a>
-                <a href="https://www.linkedin.com"><img src="images/linkedin.png" alt="Linkedin"></a>
+                <a href="https://www.linkedin.com"><img src="images/linkedin.png" alt="LinkedIn"></a>
             </div>
             <div class="subscribe">
                 <input type="email" placeholder="Enter Your Email">
@@ -110,7 +153,11 @@
         </div>
         <div class="legal">
             <div class="bottomlinks">
-                <p > <a href="termsAndConditions.html" > Terms and Conditions </a> | <a href="privacyPolicy.html"> Privacy and Cookies Policy </a> |<a href="careers.html"> Work with us </a></p> 
+                <p> 
+                    <a href="termsAndConditions.html"> Terms and Conditions </a> | 
+                    <a href="privacyPolicy.html"> Privacy and Cookies Policy </a> | 
+                    <a href="careers.html"> Work with us </a>
+                </p>
             </div>
         </div>
     </footer>
