@@ -93,8 +93,7 @@ main {
     overflow: hidden;
     max-width: 1100px;
     width: 100%;
-    
-    
+    margin-top: 10px;
 }
   
 .login-box {
@@ -254,7 +253,7 @@ footer {
     background-color: #333;
     color: white;
     padding: 5px 0; 
-    font-size: 0.9px;
+    font-size: 0.9em;
 }
 
 footer .container {
@@ -280,7 +279,7 @@ footer .bottomlinks a {
 
 footer .bottomlinks p {
     text-align: center;
-    font-size: 1px; 
+    font-size: 1em; 
 }
 
 .subscribe {
