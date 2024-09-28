@@ -54,17 +54,22 @@ nav ul li a {
 nav ul li a:hover {
     color: #ddd;
 }
-
-.booking-btn {
-    width: 100%;
-    background-color: #000000;
+/* Simple blue button */
+a .booking-btn {
+    background-color: #007bff; /* Blue color */
     color: white;
-    padding: 12px 35px;
+    padding: 10px 20px;
     font-size: 16px;
     border: none;
-    border-radius: 3px;
+    border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a .booking-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
 }
 
 .user {
@@ -88,10 +93,10 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background: url('images/hero-background.jpg') no-repeat center center/cover;
+    background-color: #222;
     color: white;
     text-align: center;
-    padding: 100px 0;
+    padding: 50px;
 }
 
 .hero h1 {
@@ -104,81 +109,211 @@ nav ul li a:hover {
     margin-bottom: 30px;
 }
 
-/* Wedding and Venue Sections */
-.wedding-list, .venue-list, .facility-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.wedding, .venue, .facility {
-    flex: 1 1 21%;
-    margin-bottom: 20px;
-}
-
-.wedding img, .venue img, .facility img {
-    width: 100%;
-    border-radius: 5px;
-}
-
-.wedding h3, .venue h3, .facility h3 {
+/* Featured Weddings Section */
+.featured-weddings {
+    padding: 40px 0;
+    background-color: #f9f9f9;
     text-align: center;
+}
+
+.featured-weddings h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.wedding-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+.wedding {
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.wedding img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.wedding:hover {
+    transform: scale(1.05);
+}
+
+.wedding:hover img {
+    transform: scale(1.1);
+}
+
+/* Most Reviewed Venues Section */
+.most-reviewed {
+    padding: 40px 0;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.most-reviewed h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.venue-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+.venue {
+    width: 220px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.venue img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.venue h3 {
+    font-size: 1.3em;
+    color: #444;
     margin: 10px 0;
 }
 
-/* Footer */
-footer {
-    background-color: #005f99;
-    color: white;
-    padding: 20px 0;
+.venue p {
+    font-size: 1em;
+    color: #777;
+}
+
+.venue:hover {
+    transform: translateY(-10px);
+}
+
+/* Key Facilities Section */
+.key-facilities {
+    padding: 40px 0;
+    background-color: #f9f9f9;
     text-align: center;
 }
 
-footer .social img {
-    width: 30px;
-    margin: 0 10px;
+.key-facilities h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
 }
 
-footer .subscribe input {
-    padding: 10px;
-    margin-right: 10px;
+.facility-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.facility {
     width: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
 }
 
-footer .subscribe button {
-    padding: 10px 20px;
-    background-color: #000;
+.facility img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.facility h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #444;
+}
+
+.facility:hover {
+    transform: scale(1.05);
+}
+
+.facility:hover img {
+    transform: scale(1.1);
+}
+
+/* Footer */
+/* Footer */
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+  }
+  
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  footer .social img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+  }
+  
+  footer .subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  footer .subscribe form {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  footer .subscribe input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  footer .subscribe button {
+    padding: 10px;
+    background-color: #007bff;
     color: white;
     border: none;
-    cursor: pointer;
-}
-
-footer .subscribe button:hover {
-    background-color: #005f99;
+    border-radius: 0 5px 5px 0;
+  }
+  
+  footer .bottomlinks {
+    text-align: center;
+  }
+  
+  footer .bottomlinks a {
     color: white;
-}
-
-.bottomlinks {
-    margin-top: 20px;
-}
-
-.bottomlinks a {
-    color: white;
-    text-decoration: none;
-}
-
-.bottomlinks a:hover {
+  }
+  
+  footer .bottomlinks a:hover {
     text-decoration: underline;
-}
-
-/* Media Queries for Responsive Design */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .venue-list, .wedding-list, .facility-list {
-        flex-direction: column;
-    }
-}
+  }
+  
