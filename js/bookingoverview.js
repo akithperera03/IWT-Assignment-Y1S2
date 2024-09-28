@@ -1,6 +1,6 @@
 function displayDateTime() {
     const now = new Date();
-    const dateTimeString = now.toLocaleString(); // Format date and time
+    const dateTimeString = now.toLocaleString();
     document.getElementById('dateTime').innerText = dateTimeString;
 }
 window.onload = displayDateTime;
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <td><button class="delete-btn"><i class="fas fa-trash"></i>Delete</button></td>
             `;
             guestListBody.appendChild(newRow);
-            orderIdDropdown.value = ''; // Clear dropdown
+            orderIdDropdown.value = '';
         } else {
             alert("Please select an Order ID.");
         }
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-// JavaScript for delete functionality with confirmation
+
 const deleteButtons = document.querySelectorAll('.delete-btn');
 
 deleteButtons.forEach(button => {
@@ -43,7 +43,7 @@ deleteButtons.forEach(button => {
         const isConfirmed = confirm('Are you sure you want to delete this entry?');
 
         if (isConfirmed) {
-            row.remove();  // Remove row if the user confirms
+            row.remove();
         }
     });
 });

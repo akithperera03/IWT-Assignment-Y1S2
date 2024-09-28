@@ -1,4 +1,3 @@
-/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
@@ -77,9 +76,9 @@ nav ul li a:hover {
 
 .guest {
     display: flex;
-    justify-content: space-between; /* To position form and image side by side */
+    justify-content: space-between;
     align-items: center;
-    width: 900px; /* Adjust based on the content */
+    width: 900px;
     background-color: #ffffff;
     padding: 30px;
     margin-left: 250px;
@@ -158,8 +157,8 @@ button:hover {
 footer {
     background-color: #333;
     color: white;
-    padding: 5px 0; /* Reduced padding */
-    font-size: 0.9em; /* Smaller font size */
+    padding: 5px 0;
+    font-size: 0.9px;
 }
 
 footer .container {
@@ -174,9 +173,9 @@ footer .social a {
 }
 
 footer .social img {
-    width: 25px; /* Reduced icon size */
+    width: 25px;
     height: 25px;
-    margin-left: 15px; /* Add space between logo and Instagram icon */
+    margin-left: 15px;
 }
 
 footer .bottomlinks a {
@@ -185,12 +184,9 @@ footer .bottomlinks a {
 
 footer .bottomlinks p {
     text-align: center;
-    font-size: 1em; /* Smaller text for links */
+    font-size: 1px;
 }
 
-
-
-/* Subscribe Section */
 .subscribe {
     max-width: 400px;
     margin: 20px auto;

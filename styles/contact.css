@@ -4,25 +4,22 @@
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-}
-
 body {
     font-family: Arial, sans-serif;
-    display: flex;
-    background-image: url(hotel1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    backdrop-filter: blur(10px);
-    z-index: 1;
-    flex-direction: column;
-    min-height: 100vh; /* Ensures the page takes up at least full viewport height */
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 
 header {
-    background-color: #f0f0f0;
+    background-color: #005f99;
     padding: 15px 0;
 }
 
@@ -32,30 +29,48 @@ header .container {
     align-items: center;
 }
 
-.logo {
-    font-weight: bold; 
-   
-}
-#logoimage{
-    width: 75px; 
+.logo img {
+    width: 75px;
     height: 75px;
 }
+
 nav ul {
     list-style: none;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
     margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #ddd;
 }
 
 .user {
     display: flex;
     align-items: center;
+    color: white;
 }
 
 .user span {
     margin-right: 10px;
+}
+
+.user a {
+    text-decoration: none;
+    color: #ddd;
+}
+
+.user a:hover {
+    color: #fff;
 }
 
 .contact-container {
@@ -147,7 +162,8 @@ nav ul li {
 footer {
     background-color: #333;
     color: white;
-    padding: 30px 0;
+    padding: 5px 0;
+    font-size: 0.9px;
 }
 
 footer .container {
@@ -156,32 +172,64 @@ footer .container {
     align-items: center;
 }
 
-.social a {
-    color: white;
-    margin-right: 10px; 
-    text-align: center; 
-} 
-.social img {
-    width: 30px; 
-    height: 30px;
-}
-
-.subscribe input {
-    padding: 10px;
-    border: none;
-    border-radius: 5px; 
-} 
-.subscribe button {
-    padding: 10px;
-    background-color: #fff;
-    border: none;
-    cursor: pointer;
-}
-.bottomlinks a{ 
-    
-        color:yellow;
-     }
-.bottomlinks p {
+footer .social a {
+    margin-right: 10px;
     text-align: center;
 }
-   
+
+footer .social img {
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+}
+
+footer .bottomlinks a {
+    color: yellow;
+}
+
+footer .bottomlinks p {
+    text-align: center;
+    font-size: 1px;
+}
+
+.subscribe {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 1px;
+    background: #333;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.subscribe h1 {
+    margin-bottom: 20px;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.subscribe button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.subscribe button:hover {
+    background-color: #0056b3;
+}
+
+#responseMessage {
+    text-align: center;
+    margin-top: 10px;
+    color: #333;
+}
