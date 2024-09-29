@@ -12,24 +12,24 @@
     <header>
         <div class="container">
             <div class="logo"> 
-                <a href="index.html"><img src="images/logo_1.jpg" id="logoimage" alt="Aurora Bliss Logo"></a>
+                <a href="index.php"><img src="images/logo_1.jpg" id="logoimage" alt="Aurora Bliss Logo"></a>
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="aboutUs.html">ABOUT US</a></li>
-                    <li><a href="ourFeatures.html">OUR FEATURES</a></li>
-                    <li><a href="venue.html">VENUE</a></li>
-                    <li><a href="gallery.html">GALLERY</a></li>
-                    <li><a href="contactUs.html">CONTACT US</a></li>
+                    <li><a href="index.php">HOME</a></li>
+                    <li><a href="aboutUs.php">ABOUT US</a></li>
+                    <li><a href="ourFeatures.php">OUR FEATURES</a></li>
+                    <li><a href="venue.php">VENUE</a></li>
+                    <li><a href="gallery.php">GALLERY</a></li>
+                    <li><a href="contactUs.php">CONTACT US</a></li>
                 </ul>
             </nav>
-            <a href="weddingreservation.html">
+            <a href="weddingreservation.php">
               <button type="button" class="booking-btn">Booking Request</button>
             </a>
             <div class="user">
                 <span>Hello!</span>
-                <a href="login.html">Login</a>
+                <a href="login.php">Login</a>
             </div>
         </div>
     </header>
@@ -215,10 +215,10 @@
         <div class="legal">
             <div class="bottomlinks">
                 <p> 
-                    <a href="termsAndConditions.html"> Terms and Conditions </a> | 
-                    <a href="privacyPolicy.html"> Privacy and Cookies Policy </a> | 
-                    <a href="FAQ.html"> FAQ </a> | 
-                    <a href="careers.html"> Work with us </a>
+                    <a href="termsAndConditions.php"> Terms and Conditions </a> | 
+                    <a href="privacyPolicy.php"> Privacy and Cookies Policy </a> | 
+                    <a href="FAQ.php"> FAQ </a> | 
+                    <a href="careers.php"> Work with us </a>
                 </p>
             </div>
         </div>

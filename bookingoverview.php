@@ -12,20 +12,20 @@
     <header>
         <div class="container">
             <div class="logo"> 
-                <a href="index.html"><img src="images/logo_1.jpg" id="logoimage"></a></div>
+                <a href="index.php"><img src="images/logo_1.jpg" id="logoimage"></a></div>
             <nav>
                 <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="aboutUs.html">ABOUT US</a></li>
-                    <li><a href="ourFeatures.html">OUR FEATURES</a></li>
-                    <li><a href="venue.html">VENUE</a></li>
-                    <li><a href="gallery.html">GALLERY</a></li>
-                    <li><a href="contactUs.html">CONTACT US</a></li>
+                    <li><a href="index.php">HOME</a></li>
+                    <li><a href="aboutUs.php">ABOUT US</a></li>
+                    <li><a href="ourFeatures.php">OUR FEATURES</a></li>
+                    <li><a href="venue.php">VENUE</a></li>
+                    <li><a href="gallery.php">GALLERY</a></li>
+                    <li><a href="contactUs.php">CONTACT US</a></li>
                 </ul>
             </nav>
             <div class="user">
                 <span>Hello!</span>
-                <a href="login.html">LogOut</a>
+                <a href="login.php">LogOut</a>
             </div>
         </div>
     </header>
@@ -117,7 +117,7 @@
                         <td>Janice Monahan</td>
                         <td>78464542V</td>
                         <td>969068968</td>
-                        <td><a href="updateguest.html"><button class="edit-btn"><i class="fas fa-edit"></i> Edit</button></a></td>
+                        <td><a href="updateguest.php"><button class="edit-btn"><i class="fas fa-edit"></i> Edit</button></a></td>
                         <td><button class="delete-btn" id="deleteBtn"><i class="fas fa-trash"></i> Delete</button> </td>
                         
                     </tr>
@@ -127,13 +127,13 @@
                         <td>Rollin Fadel</td>
                         <td>65953498V</td>
                         <td>459843958</td>
-                        <td><a href="updateguest.html"><button class="edit-btn"><i class="fas fa-edit"></i> Edit</button></td>
+                        <td><a href="updateguest.php"><button class="edit-btn"><i class="fas fa-edit"></i> Edit</button></td>
                         <td><button class="delete-btn"><i class="fas fa-trash"></i> Delete</button></td>
                     </tr>
                 </tbody>
             </table>
             <br>
-            <a href="addguest.html">
+            <a href="addguest.php">
             <button class="add-btn"><i class="fas fa-plus"></i> Add</button>
         </a>
         </section>
@@ -188,9 +188,9 @@
         <div class="legal">
             <div class="bottomlinks">
                 <p> 
-                    <a href="termsAndConditions.html"> Terms and Conditions </a> | 
-                    <a href="privacyPolicy.html"> Privacy and Cookies Policy </a> | 
-                    <a href="FAQ.html"> FAQ </a> |
+                    <a href="termsAndConditions.php"> Terms and Conditions </a> | 
+                    <a href="privacyPolicy.php"> Privacy and Cookies Policy </a> | 
+                    <a href="FAQ.php"> FAQ </a> |
                     <a href="careers.php"> Work with us </a>
                 </p>
             </div>
