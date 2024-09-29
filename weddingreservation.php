@@ -35,7 +35,7 @@
 <body>
     <div class="guest">
         <div class="image-container">
-            <img src="images/wedding.png">
+            <img src="images/stckers/wedding.png">
         </div>
         <div class="form-container">
             <h2>Wedding Reservation</h2>
