@@ -18,19 +18,19 @@
             <nav>
                 <ul>
                     <li><a href="index.php">HOME</a></li>
-                    <li><a href="aboutUs.html">ABOUT US</a></li>
-                    <li><a href="ourFeatures.html">OUR FEATURES</a></li>
-                    <li><a href="venue.html">VENUE</a></li>
-                    <li><a href="gallery.html">GALLERY</a></li>
-                    <li><a href="contactUs.html">CONTACT US</a></li>
+                    <li><a href="aboutUs.php">ABOUT US</a></li>
+                    <li><a href="ourFeatures.php">OUR FEATURES</a></li>
+                    <li><a href="venue.php">VENUE</a></li>
+                    <li><a href="gallery.php">GALLERY</a></li>
+                    <li><a href="contactUs.php">CONTACT US</a></li>
                 </ul>
             </nav>
-            <a href="weddingreservation.html">
+            <a href="weddingreservation.php">
               <button type="button" class="btn booking-btn">Booking Request</button>
             </a>
             <div class="user">
                 <span>Hello!</span>
-                <a href="login.html">Login</a>
+                <a href="login.php">Login</a>
             </div>
         </div>
     </header>
@@ -39,7 +39,7 @@
         <section class="login-section">
             <div class="login-box">
                 <h1>Login to Your Account</h1>
-                <form action="register.html" class="login-form">
+                <form action="register.php" class="login-form">
                     <div class="input-group">
                         <label for="username">Username <span class="required">*</span></label>
                         <input type="text" id="username" placeholder="Username" required>
@@ -59,7 +59,7 @@
                         <i class="fab fa-google"></i> Sign in with Google
                     </button>                    
                     <div class="legal-links">
-                        <a href="terms.html">Terms & Conditions</a> | <a href="#">Privacy</a>
+                        <a href="terms.php">Terms & Conditions</a> | <a href="#">Privacy</a>
                     </div>
                 </form>
             </div>
@@ -67,7 +67,7 @@
             <div class="signup-box">
                 <h2>New Here?</h2>
                 <p>Sign up and lock in comfort for your big day!</p>
-                <a href="register.html" class="btn signup-btn">Sign Up</a>
+                <a href="register.php" class="btn signup-btn">Sign Up</a>
             </div>
         </section>
     </main>
@@ -94,9 +94,9 @@
             <div class="legal">
                 <div class="bottomlinks">
                     <p> 
-                        <a href="termsAndConditions.html"> Terms and Conditions </a> | 
-                        <a href="privacyPolicy.html"> Privacy and Cookies Policy </a> | 
-                        <a href="FAQ.html"> FAQ </a> |
+                        <a href="termsAndConditions.php"> Terms and Conditions </a> | 
+                        <a href="privacyPolicy.php"> Privacy and Cookies Policy </a> | 
+                        <a href="FAQ.php"> FAQ </a> |
                         <a href="careers.php"> Work with us </a>
                     </p>
                 </div>
