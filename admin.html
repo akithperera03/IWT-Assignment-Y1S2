@@ -1,0 +1,205 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurora Bliss</title>
+    <link rel="stylesheet" href="styles/admin.css">
+    <link rel ="stylessheet" href ="styles/stylesheet.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo"> 
+                <a href="index.html"><img src="images/logo_1.jpg" id="logoimage" alt="Aurora Bliss Logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutUs.html">ABOUT US</a></li>
+                    <li><a href="ourFeatures.html">OUR FEATURES</a></li>
+                    <li><a href="venue.html">VENUE</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contactUs.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+            <a href="weddingreservation.html">
+              <button type="button" class="booking-btn">Booking Request</button>
+            </a>
+            <div class="user">
+                <span>Hello!</span>
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+    </header>
+<main>
+    <div class="admin-panel">
+        <div class="admin-section">
+            <div class="admin-profile">
+                <h3>Admin</h3>
+                <div class="profile-info">
+                    <img src="profile-pic-placeholder.png" alt="Profile Picture">
+                    <p>Employee Name: John Doe</p>
+                    <p>Employee ID: IT5643434</p>
+                    <button class="update-button">Update</button>
+                </div>
+            </div>
+    
+            <div class="system-info">
+                <h3>Server Information</h3>
+                <p>Server Uptime: 99.9%</p>
+                <p>Active Users: 120 Users Online</p>
+                <p>System Load: Moderate (65%)</p>
+                <p>Recent Backups: Last Backup: August 8, 2024, 2:00 AM</p>
+            </div>
+    
+            <div class="server-status">
+                <h3>Server Status</h3>
+                <p>Server Connection: <span class="status connected">Connected</span></p>
+                <p>Automatic Backup: <span class="status on">ON</span></p>
+                <p>Backup Server: <span class="status disconnected">Disconnected</span></p>
+                <p>Payment Gateway: <span class="status connected">Connected</span></p>
+            </div>
+    
+            <div class="security-overview">
+                <h3>Security Overview</h3>
+                <textarea readonly>
+                    * Multiple failed login attempts detected from IP address 192.168.1.45; possible brute-force attack.
+                    * Critical security patch available; current version vulnerable to known exploits.
+                    * Unauthorized access attempt blocked from an unrecognized device.
+                    * High number of user account lockouts observed; possible targeted attacks on user accounts.
+                    * Suspicious file uploaded by user 'john.doe'; potential malware detected.
+                    * SSL certificate expired on August 8, 2024; renewal needed to avoid security warnings.
+                </textarea>
+            </div>
+    
+            <div class="admin-controls">
+                <button class="restart-server">Restart Server</button>
+                <button class="reset-everything">Reset Everything</button>
+                <button class="download-logs">Download System Logs</button>
+            </div>
+        </div>
+    
+        <div class="user-management">
+            <h3>Manage User Accounts</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>UserID</th>
+                        <th>Email</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Janice Monahan</td>
+                        <td>rjEZYPBn</td>
+                        <td>Janice_Monahan@yahoo.com</td>
+                        <td><button>Edit</button></td>
+                    </tr>
+                    <tr>
+                        <td>Rollin Fadel</td>
+                        <td>ALGUtyjs</td>
+                        <td>Rollin_Fadel@gmail.com</td>
+                        <td><button>Edit</button></td>
+                    </tr>
+                    <tr>
+                        <td>Lera Stroman</td>
+                        <td>Oi8pdawt</td>
+                        <td>Lera_Stroman3@gmail.com</td>
+                        <td><button>Edit</button></td>
+                    </tr>
+                    <tr>
+                        <td>Adan Schiller</td>
+                        <td>H0KxRyoJ</td>
+                        <td>Adan_Schiller19@yahoo.com</td>
+                        <td><button>Edit</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+        <div class="payments-section">
+            <h3>Payments</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>UserID</th>
+                        <th>Transaction_ID</th>
+                        <th>Date and Time</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Janice Monahan</td>
+                        <td>rjEZYPBn</td>
+                        <td>YOmP1XjOHZLv</td>
+                        <td>2024-10-08 12:23</td>
+                        <td>Success</td>
+                    </tr>
+                    <tr>
+                        <td>Rollin Fadel</td>
+                        <td>ALGUtyjs</td>
+                        <td>YcsrFkaG3Dg8</td>
+                        <td>2024-09-15 08:45</td>
+                        <td>Success</td>
+                    </tr>
+                    <tr>
+                        <td>Lera Stroman</td>
+                        <td>Oi8pdawt</td>
+                        <td>zWOcJoSbEUT</td>
+                        <td>2024-11-22 14:30</td>
+                        <td>Failed-error 5678</td>
+                    </tr>
+                    <tr>
+                        <td>Adan Schiller</td>
+                        <td>H0KxRyoJ</td>
+                        <td>OMA0rJ3mkO4N</td>
+                        <td>2024-12-01 19:12</td>
+                        <td>Success</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+</main>
+<footer>
+    <div class="container">
+        <div class="logo"> 
+            <a href="index.php"><img src="images/logo_1.jpg" id="logoimage" alt="Aurora Bliss Logo"></a>
+        </div> 
+        <div class="social">
+            <a href="https://www.instagram.com"><img src="images/socialmedia/instagram.jpeg" alt="Instagram"></a>
+            <a href="https://www.facebook.com"><img src="images/socialmedia/facebook.png" alt="Facebook"></a>
+            <a href="https://www.x.com"><img src="images/socialmedia/x.png" alt="X"></a>
+            <a href="https://www.linkedin.com"><img src="images/socialmedia/linkedin.png" alt="LinkedIn"></a>
+        </div>
+
+        <div class="subscribe">
+            <h3>Subscribe to Our Newsletter</h3>
+            <form id="subscribeForm" method="POST" action="">
+                <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="legal">
+            <div class="bottomlinks">
+                <p> 
+                    <a href="termsAndConditions.html"> Terms and Conditions </a> | 
+                    <a href="privacyPolicy.html"> Privacy and Cookies Policy </a> | 
+                    <a href="FAQ.html"> FAQ </a> | 
+                    <a href="careers.html"> Work with us </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
