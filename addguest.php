@@ -114,7 +114,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <body>
     <div class="guest">
         <div class="image-container">
-            <img src="images/wedding (1).png">
+            <img src="images/stickers/wedding (1).png">
         </div>
         <div class="form-container">
             <h2>Add Guest List</h2>
