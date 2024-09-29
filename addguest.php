@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aurora Bliss</title>
-    <link rel="stylesheet" href="styles/updateguest.css">
-    
+    <link rel="stylesheet" href="styles/addguest.css">
+
 </head>
 <body>
 
@@ -17,26 +17,27 @@
             <nav>
                 <ul>
                     <li><a href="index.php">HOME</a></li>
-                    <li><a href="aboutUs.html">ABOUT US</a></li>
-                    <li><a href="ourFeatures.html">OUR FEATURES</a></li>
-                    <li><a href="venue.html">VENUE</a></li>
-                    <li><a href="gallery.html">GALLERY</a></li>
-                    <li><a href="contactUs.html">CONTACT US</a></li>
+                    <li><a href="aboutUs.php">ABOUT US</a></li>
+                    <li><a href="ourFeatures.php">OUR FEATURES</a></li>
+                    <li><a href="venue.php">VENUE</a></li>
+                    <li><a href="gallery.php">GALLERY</a></li>
+                    <li><a href="contactUs.php">CONTACT US</a></li>
                 </ul>
             </nav>
             <div class="user">
                 <span>Hello!</span>
-                <a href="login.html">Login</a>
+                <a href="login.php">Login</a>
             </div>
         </div>
     </header>
+
 <body>
     <div class="guest">
         <div class="image-container">
             <img src="images/wedding (1).png">
         </div>
         <div class="form-container">
-            <h2>Update Guest List</h2>
+            <h2>Add Guest List</h2>
             <form>
                 <label for="order-id-guest">Order ID:</label>
                 <input type="text" id="order-id-guest" name="order-id-guest" required placeholder="Enter order ID">
@@ -48,7 +49,7 @@
                 <input type="text" id="nic-number" name="nic-number" required placeholder="Enter nic number">
                 
 
-                <button type="submit">Update</button>
+                <button type="submit">Add guest</button>
             </form>
         </div>
     </div>
@@ -71,14 +72,14 @@
             <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
             <button type="submit">Submit</button>
         </form>
-
+      
     </div>
         <div class="legal">
             <div class="bottomlinks">
                 <p> 
-                    <a href="termsAndConditions.html"> Terms and Conditions </a> | 
-                    <a href="privacyPolicy.html"> Privacy and Cookies Policy </a> | 
-                    <a href="FAQ.html"> FAQ </a> |
+                    <a href="termsAndConditions.php"> Terms and Conditions </a> | 
+                    <a href="privacyPolicy.php"> Privacy and Cookies Policy </a> | 
+                    <a href="FAQ.php"> FAQ </a> |
                     <a href="careers.php"> Work with us </a>
                 </p>
             </div>
@@ -87,3 +88,4 @@
     
     </body>
     </html>
+    
