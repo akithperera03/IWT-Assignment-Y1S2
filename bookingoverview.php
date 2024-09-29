@@ -111,26 +111,40 @@
                     </tr>
                 </thead>
                 <tbody id="guest-list-body">
-                    <tr>
-                        <td>1</td>
-                        <td>KMJ5454</td>
-                        <td>Janice Monahan</td>
-                        <td>78464542V</td>
-                        <td>969068968</td>
-                        <td><a href="updateguest.php"><button class="edit-btn"><i class="fas fa-edit"></i> Edit</button></a></td>
-                        <td><button class="delete-btn" id="deleteBtn"><i class="fas fa-trash"></i> Delete</button> </td>
-                        
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>GFDF454</td>
-                        <td>Rollin Fadel</td>
-                        <td>65953498V</td>
-                        <td>459843958</td>
-                        <td><a href="updateguest.php"><button class="edit-btn"><i class="fas fa-edit"></i> Edit</button></td>
-                        <td><button class="delete-btn"><i class="fas fa-trash"></i> Delete</button></td>
-                    </tr>
-                </tbody>
+                <?php
+                    $servername="localhost";
+                    $username="root";
+                    $password="";
+                    $database="myreservation";
+
+                    $connection=new mysqli($servername, $username, $password, $database); 
+
+                    if($connection->connect_error) {
+                        die("Connection failed: " . $connection->connect_error);
+                    }
+
+                    $sql = "SELECT * FROM guestlist";
+                    $result = $connection->query($sql);
+
+                    if(!$result){
+                        die("Invalid query: " . $connection->error);
+                    }
+
+                    while($row = $result->fetch_assoc()) {
+                        echo "
+                        <tr>
+                            <td>{$row['No']}</td>
+                            <td>{$row['GuestID']}</td>
+                            <td>{$row['Name']}</td>
+                            <td>{$row['NICNumber']}</td>
+                            <td>{$row['OrderID']}</td>
+                            <td><a href='/myreservation/edit.php?id={$row['No']}'><button class='edit-btn'><i class='fas fa-edit'></i> Edit</button></a></td>
+                            <td><a href='/myreservation/delete.php?No={$row['No']}'><button class='delete-btn' id='deleteBtn'><i class='fas fa-trash'></i> Delete</button></a></td>
+                        </tr>
+                        ";
+                    }
+                    
+                    ?>
             </table>
             <br>
             <a href="addguest.php">
@@ -171,10 +185,10 @@
                 <a href="index.php"><img src="images/logo_1.jpg" id="logoimage"></a>
             </div> 
             <div class="social">
-                <a href="https://www.instagram.com"><img src="images/instagram.jpeg" alt="Instagram"></a>
-                <a href="https://www.facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
-                <a href="https://www.x.com"><img src="images/x.png" alt="X"></a>
-                <a href="https://www.linkedin.com"><img src="images/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://www.instagram.com"><img src="images/socialmedia/instagram.jpeg" alt="Instagram"></a>
+                <a href="https://www.facebook.com"><img src="images/socialmedia/facebook.png" alt="Facebook"></a>
+                <a href="https://www.x.com"><img src="images/socialmedia/x.png" alt="X"></a>
+                <a href="https://www.linkedin.com"><img src="images/socialmedia/linkedin.png" alt="LinkedIn"></a>
             </div>
     
             <div class="subscribe">
