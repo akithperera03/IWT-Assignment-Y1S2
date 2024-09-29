@@ -12,9 +12,9 @@ function checkPassword()
 	}
 	else
 	{
-		
+        window.location.href ="userAccount.php";
 		alert("Success!!");
-		return true;
+        return true;
 			
 	}
 }
