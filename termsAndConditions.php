@@ -144,10 +144,10 @@ As long as the website and the information and services on the website are provi
                     <a href="index.php"><img src="images/logo_1.jpg" id="logoimage"></a>
                 </div> 
                 <div class="social">
-                    <a href="https://www.instagram.com"><img src="images/instagram.jpeg" alt="Instagram"></a>
-                    <a href="https://www.facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
-                    <a href="https://www.x.com"><img src="images/x.png" alt="X"></a>
-                    <a href="https://www.linkedin.com"><img src="images/linkedin.png" alt="LinkedIn"></a>
+                <a href="https://www.instagram.com"><img src="images/socialmedia/instagram.jpeg" alt="Instagram"></a>
+                <a href="https://www.facebook.com"><img src="images/socialmedia/facebook.png" alt="Facebook"></a>
+                <a href="https://www.x.com"><img src="images/socialmedia/x.png" alt="X"></a>
+                <a href="https://www.linkedin.com"><img src="images/socialmedia/linkedin.png" alt="LinkedIn"></a>
                 </div>
         
                 <div class="subscribe">
