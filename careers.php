@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Careers - Aurora Bliss</title>
+    <link rel="stylesheet" href="styles/header_footer.css">
     <link rel="stylesheet" href="styles/careers.css">
     <script src="js/index.js" defer></script>
 </head>
